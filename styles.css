@@ -104,6 +104,7 @@ main {
 
 h1 {
   font-size: 4rem;
+  font-family: alisha, sans-serif;
 }
 
 @media screen and (max-width: 910px) {
@@ -153,14 +154,9 @@ blockquote p {
 
 .contact-button {
   margin-right: 2rem;
-  background: #22fca8;
-  /* background: rgb(0, 238, 255); */
-  /* background: linear-gradient(to right, #fad96d, hsl(188deg 100% 50% / 88%)); */
 }
 
 .resume-button {
-  background: #fcc222;
-  /* background: linear-gradient(to right, #fad96d, hsla(345, 100%, 65%, 0.884)); */
 }
 
 .emphasize-text {

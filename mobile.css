@@ -1,4 +1,4 @@
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 923px) {
   html {
     font-size: 14px;
   }
@@ -12,7 +12,6 @@
     justify-content: center;
     align-items: center;
     height: 27rem;
-    background: linear-gradient(to bottom, #ff6d8f21, #e229000a);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     position: fixed;
     left: 0;
@@ -81,37 +80,8 @@
     margin: 5rem 1rem 1rem;
   }
 
-  .button-container {
-    height: 7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .button {
     width: 100%;
-    height: 2.7rem;
-    border-radius: 5px;
-    border: none;
-    font-size: 1rem;
-    color: white;
-    cursor: pointer;
-  }
-
-  .button:hover {
-    background: rgb(255, 103, 103);
-  }
-
-  .contact-button {
-    margin-right: 2rem;
-    background: #22fca8;
-    /* background: rgb(0, 238, 255); */
-    /* background: linear-gradient(to right, #fad96d, hsl(188deg 100% 50% / 88%)); */
-  }
-
-  .resume-button {
-    background: #fcc222;
-    /* background: linear-gradient(to right, #fad96d, hsla(345, 100%, 65%, 0.884)); */
   }
 }
 
