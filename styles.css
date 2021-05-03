@@ -170,9 +170,9 @@ blockquote p {
   border-radius: 5px;
   border: none;
   font-size: 1rem;
-  color: rgba(255, 103, 103, 0.541);
+  color: #fa5c5c;
   cursor: pointer;
-  border: 2px solid rgba(255, 103, 103, 0.432);
+  border: 2px solid #fa5c5c;
   background: white;
   font-family: inherit;
   text-transform: uppercase;
