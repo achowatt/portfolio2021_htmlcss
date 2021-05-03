@@ -95,6 +95,22 @@
   .contact-button {
     margin-right: 1rem;
   }
+
+  footer {
+    display: block;
+    left: 50%;
+    margin-left: -10rem;
+    width: 20rem;
+    position: absolute;
+    bottom: 1.5rem;
+    text-align: center;
+  }
+  footer .content {
+    width: 100%;
+  }
+  footer p {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 462px) {
