@@ -1,5 +1,17 @@
 gsap.registerPlugin(ScrollTrigger);
 
+gsap.fromTo(
+  ".scroll-indicator",
+  {
+    y: -10,
+  },
+  {
+    y: 10,
+    repeat: -1,
+    yoyo: true,
+    duration: 1,
+  }
+);
 //For changing home page background
 // const landing = document.querySelector(".landing-page");
 // const main = document.querySelector("main");

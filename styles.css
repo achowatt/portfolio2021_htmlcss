@@ -6,8 +6,22 @@
   box-sizing: border-box;
 }
 
+a,
+a:active,
+a:link,
+a:visited {
+  color: rgb(140 140 140);
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Lato", sans-serif;
+  color: rgb(105, 105, 105);
+  /* font-family: "Libre Baskerville", serif; */
 }
 
 .container {
@@ -18,7 +32,8 @@ body {
 header {
   width: 40%;
   height: 100vh;
-  background: linear-gradient(to bottom, #ff6d8f21, #e229000a);
+  background: #ffedf1;
+  /* background: linear-gradient(to bottom, #ff6d8f21, #e229000a); */
   clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
   position: fixed;
   left: 0;
@@ -40,9 +55,9 @@ nav > ul {
   transition: color 0.5s;
 }
 
-.whiteFont {
+/* .whiteFont {
   color: white;
-}
+} */
 
 .display-image {
   width: 25%;
@@ -56,7 +71,7 @@ nav > ul {
 }
 
 .display-image.border {
-  border: 10px solid #fff3f3;
+  border: 10px solid #ffedf1;
 }
 
 .landing-img {
@@ -87,24 +102,28 @@ main {
 }
 
 .home-sections {
-  width: 100%;
+  width: 60%;
   height: 100vh;
+  margin-left: 40%;
   max-height: 61rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  /* justify-content: flex-end; */
   align-items: center;
 }
 
 .home-sections > .content,
 .project-section > .content {
-  width: 48%;
+  width: 70%;
   max-width: 44rem;
-  margin-right: 10%;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-family: alisha, sans-serif;
+  line-height: 1;
+  margin-bottom: 2rem;
+  color: #fa5c5c;
 }
 
 @media screen and (max-width: 910px) {
@@ -114,8 +133,8 @@ h1 {
 }
 
 p {
-  font-size: 1.2rem;
-  padding: 1rem 0;
+  /* font-size: 1.2rem; */
+  /* padding: 1rem 0; */
 }
 
 .content ul {
@@ -127,9 +146,8 @@ blockquote p {
 }
 
 .landing-page {
-  /* background: rgb(0, 0, 0); */
-  /* color: white; */
   max-height: none;
+  position: relative;
 }
 
 .button-container {
@@ -138,18 +156,31 @@ blockquote p {
   align-items: center;
 }
 
+.button-container-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 4rem;
+}
+
 .button {
   width: 10rem;
   height: 2.7rem;
   border-radius: 5px;
   border: none;
   font-size: 1rem;
-  color: white;
+  color: rgba(255, 103, 103, 0.541);
   cursor: pointer;
+  border: 2px solid rgba(255, 103, 103, 0.432);
+  background: white;
+  font-family: inherit;
+  text-transform: uppercase;
 }
 
 .button:hover {
   background: rgb(255, 103, 103);
+  color: white;
 }
 
 .contact-button {
@@ -157,6 +188,18 @@ blockquote p {
 }
 
 .resume-button {
+}
+
+.scroll-indicator {
+  background-image: url("/images/arrow.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 5rem;
+  height: 5rem;
+  background-color: unset;
+  border: unset;
+  cursor: pointer;
 }
 
 .emphasize-text {
