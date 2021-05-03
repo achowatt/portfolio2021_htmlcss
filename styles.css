@@ -259,10 +259,12 @@ footer p {
 
 .form-input {
   resize: none;
+  -webkit-appearance: none;
 }
 
 .form-message {
   height: 10rem;
+  -webkit-appearance: none;
 }
 
 .project-section {
