@@ -28,7 +28,7 @@ header {
 nav {
   position: absolute;
   bottom: 5rem;
-  left: 5rem;
+  left: 19%;
 }
 nav > ul {
   display: flex;
@@ -50,7 +50,7 @@ nav > ul {
   position: fixed;
   left: 15%;
   top: 50%;
-  transform: translateY(-50%);
+  margin-top: -12.5%;
   border-radius: 50%;
   z-index: 3;
 }
@@ -104,6 +104,12 @@ main {
 
 h1 {
   font-size: 4rem;
+}
+
+@media screen and (max-width: 910px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 p {
