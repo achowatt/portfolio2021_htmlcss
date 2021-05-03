@@ -1,0 +1,113 @@
+@media screen and (max-width: 850px) {
+  html {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 27rem;
+    background: linear-gradient(to bottom, #ff6d8f21, #e229000a);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    position: fixed;
+    left: 0;
+    z-index: 2;
+  }
+
+  header.hide-nav {
+    top: -17rem;
+  }
+
+  nav {
+    position: relative;
+    top: -3rem;
+    text-align: center;
+  }
+
+  nav > ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* width: 16rem; */
+    list-style-type: none;
+    font-size: 1.4rem;
+    transition: color 0.5s;
+  }
+
+  .display-image {
+    top: 20.5rem;
+
+    width: 25vh;
+    min-width: 8rem;
+    max-width: 27rem;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    z-index: 3;
+  }
+
+  .display-image.hide-nav {
+    top: 4rem;
+  }
+
+  .display-image.border {
+    border: 6px solid #fff3f3;
+  }
+
+  .home-sections {
+    width: 100%;
+    height: 100vh;
+    max-height: unset;
+    display: flex;
+    justify-content: center;
+    /* justify-content: flex-end; */
+    align-items: center;
+  }
+
+  .home-sections > .content {
+    margin-top: 5rem;
+    padding: 2rem;
+    width: 100%;
+    max-width: 39rem;
+    margin-right: 0%;
+  }
+
+  .button-container {
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button {
+    width: 100%;
+    height: 2.7rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background: rgb(255, 103, 103);
+  }
+
+  .contact-button {
+    margin-right: 2rem;
+    background: #22fca8;
+    /* background: rgb(0, 238, 255); */
+    /* background: linear-gradient(to right, #fad96d, hsl(188deg 100% 50% / 88%)); */
+  }
+
+  .resume-button {
+    background: #fcc222;
+    /* background: linear-gradient(to right, #fad96d, hsla(345, 100%, 65%, 0.884)); */
+  }
+}
