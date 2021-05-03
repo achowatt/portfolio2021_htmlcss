@@ -212,11 +212,13 @@ h1 .emphasize-text {
 
 footer {
   display: flex;
-  justify-content: flex-end;
+  justify-self: center;
+  align-items: center;
 }
 footer .content {
-  width: 35%;
-  margin-right: 13%;
+  width: 60%;
+  margin-left: 40%;
+  text-align: center;
 }
 footer p {
   padding: 0;
