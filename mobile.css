@@ -41,19 +41,19 @@
 
   .display-image {
     top: 20.5rem;
-    width: 25vh;
+    width: 11rem;
     min-width: 8rem;
     max-width: 27rem;
     position: fixed;
     left: 50%;
-    margin-left: -12.5vh;
+    margin-left: -5.5rem;
     margin-top: unset;
     border-radius: 50%;
     z-index: 3;
   }
 
   .display-image.hide-nav {
-    top: 1.5rem;
+    top: 1rem;
   }
 
   .display-image.border {
