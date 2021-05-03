@@ -43,7 +43,7 @@ timeline
     { opacity: 0, scale: 2 },
     {
       duration: 1,
-      opacity: 0.8,
+      opacity: 0.5,
       scale: 1,
     }
   )
@@ -53,7 +53,7 @@ timeline
   })
   .to(".skills-img", {
     duration: 1,
-    opacity: 0.8,
+    opacity: 0.5,
   })
   .to(".skills-img", {
     duration: 1,
@@ -61,7 +61,7 @@ timeline
   })
   .to(".contact-img", {
     duration: 1,
-    opacity: 0.8,
+    opacity: 0.5,
   });
 
 ScrollTrigger.create({
