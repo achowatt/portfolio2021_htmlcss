@@ -40,13 +40,12 @@
   }
 
   .display-image {
-    top: 20.5rem;
-    width: 11rem;
+    width: 25vh;
     min-width: 8rem;
     max-width: 27rem;
     position: fixed;
     left: 50%;
-    margin-left: -5.5rem;
+    margin-left: -12.5vh;
     margin-top: unset;
     border-radius: 50%;
     z-index: 3;
@@ -79,7 +78,7 @@
     border-radius: 20px;
     box-shadow: 2px 2px 10px #8080804d;
     z-index: 10;
-    margin: 1rem;
+    margin: 5rem 1rem 1rem;
   }
 
   .button-container {
@@ -113,5 +112,19 @@
   .resume-button {
     background: #fcc222;
     /* background: linear-gradient(to right, #fad96d, hsla(345, 100%, 65%, 0.884)); */
+  }
+}
+
+@media screen and (max-width: 462px) {
+  .display-image {
+    width: 47vw;
+    min-width: 8rem;
+    max-width: 19rem;
+    position: fixed;
+    left: 50%;
+    margin-left: -25.5vw;
+    margin-top: unset;
+    border-radius: 50%;
+    z-index: 3;
   }
 }
