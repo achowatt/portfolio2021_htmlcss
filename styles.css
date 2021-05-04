@@ -95,6 +95,7 @@ main {
   position: relative;
   right: 0;
   transition: background 0.5s;
+  background-attachment: fixed;
 }
 
 .blackBackground {
