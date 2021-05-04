@@ -15,7 +15,7 @@
     background-image: url("data:image/svg+xml,%3Csvg width='860' height='909' viewBox='0 0 860 909' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='860' height='909' fill='white'/%3E%3Cpath d='M0 215V0H860V112.5L0 215Z' fill='%23FFEDF1'/%3E%3C/svg%3E%0A");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: initial;
+    background-attachment: inherit;
   }
   header {
     width: 100%;
