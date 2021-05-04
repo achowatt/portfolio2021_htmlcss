@@ -278,3 +278,11 @@ footer p {
   right: 10px;
   z-index: 99;
 }
+
+.nav-buttons {
+  display: flex;
+}
+
+.nav-buttons img {
+  margin-right: 1rem;
+}

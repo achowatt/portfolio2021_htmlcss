@@ -122,6 +122,20 @@
     margin-left: 0%;
     text-align: center;
   }
+
+  .nav-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav-buttons li {
+    line-height: 1.5;
+  }
+  .nav-buttons img {
+    margin-right: unset;
+    height: 25px;
+  }
 }
 
 @media screen and (max-width: 462px) {
@@ -148,12 +162,12 @@
   }
 
   header {
-    height: 4rem;
+    height: 5rem;
     padding: 0 3rem;
   }
 
   nav > ul {
     font-size: 1rem;
-    padding: 0 3rem;
+    /* padding: 0 3rem; */
   }
 }
