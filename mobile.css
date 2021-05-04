@@ -10,52 +10,56 @@
   p {
     font-size: 1.2rem;
   }
+
+  main {
+    background-image: url("data:image/svg+xml,%3Csvg width='860' height='909' viewBox='0 0 860 909' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='860' height='909' fill='white'/%3E%3Cpath d='M0 215V0H860V112.5L0 215Z' fill='%23FFEDF1'/%3E%3C/svg%3E%0A");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
   header {
     width: 100%;
+    height: 5rem;
+    clip-path: unset;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 11;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 27rem;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-    position: fixed;
-    left: 0;
-    z-index: 2;
-  }
-
-  header.hide-nav {
-    top: -17rem;
+    background: white;
+    border-top: solid 2px #ffedf1;
+    /* box-shadow: 2px 2px 2px black; */
   }
 
   nav {
-    position: relative;
-    top: -3rem;
-    text-align: center;
+    all: unset;
   }
 
   nav > ul {
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
-    /* width: 16rem; */
-    list-style-type: none;
-    font-size: 1.4rem;
-    transition: color 0.5s;
+    flex-direction: row;
+    height: unset;
+    width: 20rem;
+    max-width: 100%;
+    font-size: 1.2rem;
   }
 
   .display-image {
     width: 25vh;
-    min-width: 8rem;
+    min-width: 11rem;
     max-width: 27rem;
     position: fixed;
     left: 50%;
     margin-left: -12.5vh;
     margin-top: unset;
-    border-radius: 50%;
-    z-index: 3;
-  }
-
-  .display-image.hide-nav {
     top: 1rem;
+    z-index: 2;
+    border-radius: 50%;
   }
 
   .display-image.border {
@@ -66,7 +70,7 @@
     width: 100%;
     height: 100vh;
     max-height: unset;
-    min-height: 835px;
+    min-height: 770px;
     display: flex;
     justify-content: center;
     /* justify-content: flex-end; */
@@ -97,6 +101,7 @@
   }
 
   footer {
+    background: #ffedf1;
     display: flex;
     justify-self: center;
     align-items: center;
@@ -110,6 +115,11 @@
 }
 
 @media screen and (max-width: 462px) {
+  main {
+    background-image: url("data:image/svg+xml,%3Csvg width='446' height='909' viewBox='0 0 446 909' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='446' height='909' fill='white'/%3E%3Cpath d='M0 161V0H446V101L0 161Z' fill='%23FFEDF1'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
   h1 {
     font-size: 2.9rem;
   }
@@ -126,5 +136,15 @@
     margin-top: unset;
     border-radius: 50%;
     z-index: 3;
+  }
+
+  header {
+    height: 4rem;
+    padding: 0 3rem;
+  }
+
+  nav > ul {
+    font-size: 1rem;
+    padding: 0 3rem;
   }
 }

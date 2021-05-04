@@ -1,40 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.fromTo(
-  ".scroll-indicator",
-  {
-    y: -10,
-  },
-  {
-    y: 10,
-    repeat: -1,
-    yoyo: true,
-    duration: 1,
-  }
-);
-//For changing home page background
-// const landing = document.querySelector(".landing-page");
-// const main = document.querySelector("main");
-// const nav = document.querySelector("nav ul");
-// const image = document.querySelector(".display-image");
-// const option = {
-//   threshold: 0.51,
-// };
-// function callBack(entries) {
-//   console.log(entries[0]);
-//   if (!entries[0].isIntersecting) {
-//     main.classList.remove("blackBackground");
-//     nav.classList.remove("whiteFont");
-//     image.classList.add("border");
-//   } else {
-//     main.classList.add("blackBackground");
-//     nav.classList.add("whiteFont");
-//     image.classList.remove("border");
-//   }
-// }
-// const observer = new IntersectionObserver(callBack, option);
-// observer.observe(landing);
-
 //For changing images
 let timeline = gsap.timeline();
 

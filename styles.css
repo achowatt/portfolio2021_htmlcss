@@ -140,6 +140,7 @@ p {
 .content ul {
   list-style-position: inside;
 }
+
 blockquote p {
   font-size: 1rem;
   margin-top: 2rem;
@@ -188,18 +189,6 @@ blockquote p {
 }
 
 .resume-button {
-}
-
-.scroll-indicator {
-  background-image: url("/images/arrow.svg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 5rem;
-  height: 5rem;
-  background-color: unset;
-  border: unset;
-  cursor: pointer;
 }
 
 .emphasize-text {
@@ -276,4 +265,15 @@ footer p {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+.hamburger-nav {
+  background-image: url("data:image/svg+xml,%3Csvg width='273' height='273' viewBox='0 0 273 273' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='273' height='273' fill='white'/%3E%3Crect x='48' y='63' width='177' height='30' rx='12' fill='%23DA2F2F'/%3E%3Crect x='48' y='121' width='177' height='30' rx='12' fill='%23DA2F2F'/%3E%3Crect x='48' y='177' width='177' height='30' rx='12' fill='%23DA2F2F'/%3E%3C/svg%3E%0A");
+  background-size: cover;
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 99;
 }
