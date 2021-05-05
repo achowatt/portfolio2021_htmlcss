@@ -40,7 +40,7 @@ timeline
 ScrollTrigger.create({
   trigger: "main",
   start: "top top",
-  end: "bottom bottom",
+  end: "75% top",
   animation: timeline,
   scrub: 1,
 });
