@@ -168,6 +168,9 @@ blockquote p {
   background: white;
   font-family: inherit;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button:hover {
@@ -176,14 +179,19 @@ blockquote p {
   color: white;
 }
 
-.contact-button {
+.contact-button,
+.livesite-button {
   margin-right: 2rem;
   /* background: linear-gradient(215deg, #e05252, pink, #e05252); */
   background: #fa5c5c;
   color: white;
 }
 
-.resume-button {
+a.livesite-button {
+  color: white;
+}
+a.github-button {
+  color: #fa5c5c;
 }
 
 .emphasize-text {
