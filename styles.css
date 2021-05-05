@@ -32,8 +32,8 @@ body {
 header {
   width: 40%;
   height: 100vh;
+  /* background: linear-gradient(to bottom, #fff2e6, #ffc2dd, #fff2e6); */
   background: #ffedf1;
-  /* background: linear-gradient(to bottom, #ff6d8f21, #e229000a); */
   clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
   position: fixed;
   left: 0;
@@ -43,7 +43,7 @@ header {
 nav {
   position: absolute;
   bottom: 5rem;
-  left: 19%;
+  left: 10%;
 }
 nav > ul {
   display: flex;
@@ -95,7 +95,6 @@ main {
   position: relative;
   right: 0;
   transition: background 0.5s;
-  background-attachment: fixed;
 }
 
 .blackBackground {
@@ -127,14 +126,8 @@ h1 {
   color: #fa5c5c;
 }
 
-@media screen and (max-width: 910px) {
-  h1 {
-    font-size: 3rem;
-  }
-}
-
 p {
-  /* font-size: 1.2rem; */
+  font-size: 1.2rem;
   /* padding: 1rem 0; */
 }
 
@@ -173,20 +166,24 @@ blockquote p {
   border: none;
   font-size: 1rem;
   color: #fa5c5c;
+  border: solid 2px #fa5c5c;
   cursor: pointer;
-  border: 2px solid #fa5c5c;
   background: white;
   font-family: inherit;
   text-transform: uppercase;
 }
 
 .button:hover {
-  background: rgb(255, 103, 103);
+  background: #ff8d8d;
+  border: solid 2px #ff8d8d;
   color: white;
 }
 
 .contact-button {
   margin-right: 2rem;
+  /* background: linear-gradient(215deg, #e05252, pink, #e05252); */
+  background: #fa5c5c;
+  color: white;
 }
 
 .resume-button {
@@ -252,6 +249,7 @@ footer p {
 .form-input {
   resize: none;
   -webkit-appearance: none;
+  font-family: "Lato";
 }
 
 .form-message {
@@ -285,4 +283,10 @@ footer p {
 
 .nav-buttons img {
   margin-right: 1rem;
+  visibility: hidden;
+}
+
+.nav-buttons li {
+  font-size: 1.2rem;
+  color: #860000;
 }

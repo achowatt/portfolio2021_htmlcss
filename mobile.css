@@ -41,8 +41,7 @@
     justify-content: center;
     align-items: center;
     background: white;
-    border-top: solid 2px #ffedf1;
-    /* box-shadow: 2px 2px 2px black; */
+    box-shadow: 4px -2px 20px #d0d0d040;
   }
 
   nav {
@@ -131,10 +130,12 @@
 
   .nav-buttons li {
     line-height: 1.5;
+    font-size: 1rem;
   }
   .nav-buttons img {
     margin-right: unset;
     height: 25px;
+    visibility: visible;
   }
 }
 
@@ -168,6 +169,7 @@
 
   nav > ul {
     font-size: 1rem;
+    justify-self: space-around;
     /* padding: 0 3rem; */
   }
 }
