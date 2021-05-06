@@ -1,13 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
-let timeline = gsap.timeline({ repeat: -1, yoyo: true });
-let playing = true;
-
-document.querySelector(".display-image").addEventListener("click", function () {
-  playing ? timeline.pause() : timeline.resume();
-  playing = !playing;
-});
-
-document.querySelector(".display-image").style.cursor = "pointer";
+let timeline = gsap.timeline();
 
 timeline
   .to("text", {
@@ -115,7 +107,7 @@ timeline
     {
       rotation: -360,
       duration: 2,
-      opacity: 0,
+      opacity: 1,
     },
     "<"
   )
@@ -123,7 +115,7 @@ timeline
     "text",
     {
       stagger: 0.2,
-      opacity: 0,
+      opacity: 1,
     },
     "<0.2"
   )
@@ -134,35 +126,8 @@ timeline
       scale: 1,
     },
     "<"
-  );
-//   .to("#flower", {
-//     //forth scene
-//     scale: 0,
-//     opacity: 1,
-//     duration: 0.5,
-//   })
-//   .to("#flower", {
-//     scale: 2,
-//     duration: 0.3,
-//   })
-//   .to("#flower", {
-//     scale: 1,
-//     duration: 0.3,
-//   })
-//   .to(
-//     "text",
-//     {
-//       stagger: 0.2,
-//       scale: 1,
-//       opacity: 1,
-//     },
-//     "<0.5"
-//   );
-
-// ScrollTrigger.create({
-//   trigger: "main",
-//   start: "top top",
-//   end: "75% top",
-//   animation: timeline,
-//   scrub: 1,
-// });
+  )
+  .to("#flower", {
+    scale: 1,
+    duration: 1,
+  });
