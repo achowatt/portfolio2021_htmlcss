@@ -123,7 +123,8 @@ h1 {
   color: #fa5c5c;
 }
 
-p {
+p,
+ul {
   font-size: 1.2rem;
   /* padding: 1rem 0; */
 }
@@ -194,8 +195,9 @@ a.github-button {
   color: #fa5c5c;
 }
 
-.emphasize-text {
-  color: #ff9f9f;
+.emphasize-text,
+a.emphasize-text {
+  color: #ff7a7a;
 }
 
 h1 .emphasize-text {
