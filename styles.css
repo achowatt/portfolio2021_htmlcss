@@ -166,7 +166,7 @@ blockquote p {
   color: #fa5c5c;
   border: solid 2px #fa5c5c;
   cursor: pointer;
-  background: white;
+  background: none;
   font-family: inherit;
   text-transform: uppercase;
   display: flex;
@@ -183,7 +183,6 @@ blockquote p {
 .contact-button,
 .livesite-button {
   margin-right: 2rem;
-  /* background: linear-gradient(215deg, #e05252, pink, #e05252); */
   background: #fa5c5c;
   color: white;
 }
