@@ -97,26 +97,58 @@ main {
   transition: background 0.5s;
 }
 
-.home-sections,
-.project {
+.home-sections {
   width: 60%;
   height: 100vh;
   margin-left: 40%;
   max-height: 61rem;
   display: flex;
   justify-content: center;
-  /* justify-content: flex-end; */
   align-items: center;
 }
 
-.home-sections > .content,
-.project > .content {
+.home-sections > .content {
   width: 70%;
   max-width: 44rem;
 }
 
+.project {
+  margin-left: 40%;
+  /* max-height: 61rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project > img {
+  margin-right: 2rem;
+}
+
+.project > .content {
+  width: 70%;
+  max-width: 44rem;
+  box-shadow: 2px 2px 8px #b9b9b973;
+  margin: 8rem 0 0;
+  padding: 2rem;
+}
+.project > .content img {
+  float: right;
+  opacity: 0.3;
+}
+.project:last-child > .content {
+  margin: 8rem 0;
+}
+
 h1 {
   font-size: 5rem;
+  font-family: alisha, sans-serif;
+  line-height: 1;
+  margin-bottom: 2rem;
+  color: #fa5c5c;
+}
+
+h2 {
+  font-size: 3rem;
   font-family: alisha, sans-serif;
   line-height: 1;
   margin-bottom: 2rem;
