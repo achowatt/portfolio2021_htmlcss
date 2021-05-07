@@ -49,23 +49,16 @@ ScrollTrigger.create({
   scrub: 1,
 });
 
-const sections = document.querySelectorAll("section");
+const greeting = document.querySelector(".greeting");
 
-function callBack(entries, observer) {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) {
-      return;
-      // entry.target.classList.add("hide");
-      // console.log(entry.target.children[0].children[0].classList);
-    }
-    entry.target.classList.remove("hide");
-    console.log(entry.target.children[0].children[0].classList);
-  });
+function callBack(entry, observer) {
+  if (entry[0].isIntersecting) {
+    entry[0].target.classList.add("bounce");
+  } else {
+    entry[0].target.classList.remove("bounce");
+  }
 }
 
-const observer = new IntersectionObserver(callBack, { threshold: 0.4 });
+const observer = new IntersectionObserver(callBack, { threshold: 0.5 });
 
-sections.forEach((section) => {
-  observer.observe(section);
-  section.classList.add("hide");
-});
+observer.observe(greeting);
