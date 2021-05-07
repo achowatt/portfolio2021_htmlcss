@@ -95,6 +95,7 @@ main {
   position: relative;
   right: 0;
   transition: background 0.5s;
+  overflow-x: hidden;
 }
 
 .home-sections {
@@ -110,6 +111,7 @@ main {
 .home-sections > .content {
   width: 70%;
   max-width: 44rem;
+  transition: all 1.5s;
 }
 
 .project-section {
@@ -182,6 +184,7 @@ h1 {
   line-height: 1;
   margin-bottom: 2rem;
   color: #fa5c5c;
+  transition: all 1.5s;
 }
 
 h2 {
@@ -270,19 +273,6 @@ a.emphasize-text {
 
 h1 .emphasize-text {
   color: #fa5c5c;
-}
-
-.bounce {
-  animation: bounce 1s linear infinite alternate;
-}
-
-@keyframes bounce {
-  from {
-    transform: translate(1px, -10px);
-  }
-  to {
-    transform: translate(0, 20px);
-  }
 }
 
 footer {

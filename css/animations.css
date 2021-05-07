@@ -1,0 +1,17 @@
+.appear {
+  animation: appear 1.5s linear;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    /* transform: translate(0px, 50px); */
+  }
+}
+
+@keyframes scale {
+  from {
+    opacity: 0;
+    transform: translate(0px, 50px);
+  }
+}

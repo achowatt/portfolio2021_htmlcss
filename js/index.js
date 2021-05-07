@@ -49,16 +49,34 @@ ScrollTrigger.create({
   scrub: 1,
 });
 
-const greeting = document.querySelector(".greeting");
+//sections:
+const h1 = document.querySelectorAll("h1");
+const landing = document.querySelector("#landing");
+const about = document.querySelector("#about");
+const skills = document.querySelector("#skills");
+const contact = document.querySelector("#contact");
 
-function callBack(entry, observer) {
-  if (entry[0].isIntersecting) {
-    entry[0].target.classList.add("bounce");
-  } else {
-    entry[0].target.classList.remove("bounce");
+h1.forEach((h) => (h.style.opacity = 0));
+
+function callBack(entries, observer) {
+  for (const entry of entries) {
+    if (entry.isIntersecting) {
+      console.log(entry);
+      entry.target.style.opacity = 1;
+      entry.target.style.transform = "scale(1)";
+      // entry.target.style.transform = "translate(0,0)";
+    } else {
+      console.log(entry);
+      entry.target.style.opacity = 0;
+      entry.target.style.transform = "scale(0.5)";
+      // entry.target.style.transform = "translate(200px)";
+    }
   }
 }
 
-const observer = new IntersectionObserver(callBack, { threshold: 0.5 });
+const observer = new IntersectionObserver(callBack, { threshold: 0 });
 
-observer.observe(greeting);
+observer.observe(landing);
+observer.observe(about);
+observer.observe(skills);
+observer.observe(contact);
