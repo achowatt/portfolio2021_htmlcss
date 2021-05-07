@@ -278,7 +278,7 @@ h1 .emphasize-text {
 
 @keyframes bounce {
   from {
-    transform: translate(-10px);
+    transform: translateY(-10px);
   }
   to {
     transform: translateY(20px);
