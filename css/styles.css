@@ -10,7 +10,6 @@ a,
 a:active,
 a:link,
 a:visited {
-  color: rgb(140 140 140);
   text-decoration: none;
 }
 
@@ -163,6 +162,7 @@ main {
   justify-content: center;
   padding: 2rem;
   z-index: 10;
+  background: #ffffff47;
 }
 
 @media screen and (max-width: 1160px) {
@@ -203,6 +203,7 @@ p,
 ul {
   z-index: 3;
   font-size: 1.2rem;
+  transition: all 1.5s;
   /* padding: 1rem 0; */
 }
 

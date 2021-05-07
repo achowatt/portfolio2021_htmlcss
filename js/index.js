@@ -56,7 +56,9 @@ const about = document.querySelector("#about");
 const skills = document.querySelector("#skills");
 const contact = document.querySelector("#contact");
 
-h1.forEach((h) => (h.style.opacity = 0));
+h1.forEach((h) => {
+  h.style.opacity = 0;
+});
 
 function callBack(entries, observer) {
   for (const entry of entries) {
