@@ -273,7 +273,7 @@ h1 .emphasize-text {
 }
 
 .bounce {
-  animation: bounce 1s linear infinite alternate;
+  animation: bounce 1s infinite;
 }
 
 @keyframes bounce {
