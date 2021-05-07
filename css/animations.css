@@ -15,3 +15,16 @@
     transform: translate(0px, 50px);
   }
 }
+
+/* Animation */
+#Flower {
+  animation: rotate linear infinite 3s;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
