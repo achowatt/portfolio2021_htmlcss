@@ -48,3 +48,24 @@ ScrollTrigger.create({
   animation: timeline,
   scrub: 1,
 });
+
+const sections = document.querySelectorAll("section");
+
+function callBack(entries, observer) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+      // entry.target.classList.add("hide");
+      // console.log(entry.target.children[0].children[0].classList);
+    }
+    entry.target.classList.remove("hide");
+    console.log(entry.target.children[0].children[0].classList);
+  });
+}
+
+const observer = new IntersectionObserver(callBack, { threshold: 0.4 });
+
+sections.forEach((section) => {
+  observer.observe(section);
+  section.classList.add("hide");
+});
