@@ -99,32 +99,16 @@
   }
 
   .project-section {
-    margin-left: 0%;
-  }
-  .project {
     margin-left: unset;
-    /* max-height: 61rem; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
-  .project > img {
-    margin-right: 2rem;
-  }
-
-  .project > .content {
-    width: 90%;
-    max-width: 44rem;
-    box-shadow: 2px 2px 8px #b9b9b973;
-    background: rgba(255, 255, 255, 0.801);
-    margin: 8rem 0 0;
-    padding: 2rem;
+  .project {
     z-index: 10;
+    background: rgba(252, 252, 252, 0.884);
   }
 
-  .project:first-of-type > .content {
-    margin-top: calc(25vh + 2rem);
+  .project:first-of-type {
+    margin-top: calc(25vh + 3rem);
   }
 
   .button {
