@@ -273,12 +273,15 @@ h1 .emphasize-text {
 }
 
 .bounce {
-  animation: bounce 1s infinite alternate;
+  animation: bounce 1s linear infinite alternate;
 }
 
 @keyframes bounce {
+  from {
+    transform: translateY(-10px);
+  }
   to {
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
 }
 
