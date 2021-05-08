@@ -34,8 +34,7 @@ img {
 header {
   width: 40%;
   height: 100vh;
-  /* background: linear-gradient(to bottom, #fff2e6, #ffc2dd, #fff2e6); */
-  background: #ffedf1;
+  /* background: #ffedf1; */
   clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
   position: fixed;
   left: 0;
@@ -45,7 +44,7 @@ header {
 nav {
   position: absolute;
   bottom: 5rem;
-  left: 10%;
+  left: 18%;
 }
 nav > ul {
   display: flex;
@@ -213,6 +212,21 @@ ul {
   /* padding: 1rem 0; */
 }
 
+@media screen and (max-width: 1110px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p,
+  ul {
+    font-size: 1rem;
+  }
+}
+
 .content ul {
   list-style-position: inside;
 }
@@ -353,7 +367,7 @@ footer p {
 
 .nav-buttons img {
   margin-right: 1rem;
-  visibility: hidden;
+  display: none;
 }
 
 .nav-buttons li {
