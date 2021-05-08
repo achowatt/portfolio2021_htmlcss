@@ -1,11 +1,11 @@
-.appear {
-  animation: appear 1.5s linear;
+.bounce {
+  animation: bounce 1s linear infinite alternate;
 }
 
-@keyframes appear {
+@keyframes bounce {
   from {
     opacity: 0;
-    /* transform: translate(0px, 50px); */
+    transform: translate(0px, 50px);
   }
 }
 

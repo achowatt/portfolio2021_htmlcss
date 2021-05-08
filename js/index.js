@@ -10,7 +10,7 @@ timeline
       opacity: 1,
     },
     {
-      duration: 1,
+      duration: 1.5,
       opacity: 0,
       scale: 2,
     }
