@@ -151,6 +151,12 @@
     height: 25px;
     visibility: visible;
   }
+
+  button.arrow-down {
+    width: 50px;
+    height: 50px;
+    bottom: 23%;
+  }
 }
 
 @media screen and (max-width: 462px) {
@@ -192,14 +198,8 @@
     justify-self: space-around;
     /* padding: 0 3rem; */
   }
-
-  button.arrow-down {
-    width: 50px;
-    height: 50px;
-    bottom: 20%;
-  }
 }
-@media screen and (max-width: 265px) {
+@media screen and (max-width: 280px) {
   nav > ul {
     padding: 0 3rem;
   }
