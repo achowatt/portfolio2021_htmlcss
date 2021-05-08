@@ -131,18 +131,3 @@ timeline
     scale: 1,
     duration: 1,
   });
-
-const arrowButton = document.querySelector(".arrow-down");
-const bookStore = document.querySelector("#book_store");
-function arrowDown(entries, observer) {
-  for (const entry of entries) {
-    if (entry.isIntersecting) {
-      arrowButton.style.visibility = "hidden";
-    } else {
-      arrowButton.style.visibility = "visible";
-    }
-  }
-}
-
-const arrow = new IntersectionObserver(arrowDown, { threshold: 0.2 });
-arrow.observe(bookStore);

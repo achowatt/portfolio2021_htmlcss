@@ -65,11 +65,9 @@ function callBack(entries, observer) {
     if (entry.isIntersecting) {
       entry.target.style.opacity = 1;
       entry.target.style.transform = "scale(1)";
-      // entry.target.style.transform = "translate(0,0)";
     } else {
       entry.target.style.opacity = 0;
       entry.target.style.transform = "scale(0.5)";
-      // entry.target.style.transform = "translate(200px)";
     }
   }
 }
@@ -80,16 +78,3 @@ observer.observe(landing);
 observer.observe(about);
 observer.observe(skills);
 observer.observe(contact);
-
-function arrowDown(entries, observer) {
-  for (const entry of entries) {
-    if (entry.isIntersecting) {
-      arrowButton.style.visibility = "hidden";
-    } else {
-      arrowButton.style.visibility = "visible";
-    }
-  }
-}
-
-const arrow = new IntersectionObserver(arrowDown, { threshold: 0.2 });
-arrow.observe(about);
