@@ -20,7 +20,6 @@ html {
 body {
   font-family: "Lato", sans-serif;
   color: rgb(105, 105, 105);
-  /* font-family: "Libre Baskerville", serif; */
 }
 
 .container {
@@ -34,7 +33,8 @@ img {
 header {
   width: 40%;
   height: 100vh;
-  /* background: #ffedf1; */
+  transition: background 0.7s;
+  background: #ffedf1;
   clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
   position: fixed;
   left: 0;
@@ -96,8 +96,9 @@ main {
   width: 100%;
   position: relative;
   right: 0;
-  transition: background 0.5s;
+  transition: background 0.7s;
   overflow-x: hidden;
+  /* background: #0a0a0a; */
 }
 
 .home-sections {
@@ -110,10 +111,22 @@ main {
   align-items: center;
 }
 
+.add-dividers {
+  position: relative;
+}
+
+.add-dividers::after {
+  content: url("/assets/images/divider.svg");
+  position: absolute;
+  bottom: 0;
+  opacity: 0.3;
+}
+
 .home-sections > .content {
   width: 70%;
   max-width: 44rem;
-  transition: all 1.5s;
+  transition: color 1.5s;
+  transition: background 1.5s;
 }
 
 .project-section {

@@ -49,18 +49,18 @@ ScrollTrigger.create({
   scrub: 1,
 });
 
-// sections:
+//h1 animations
 const h1 = document.querySelectorAll("h1");
-const landing = document.querySelector("#landing");
-const about = document.querySelector("#about");
-const skills = document.querySelector("#skills");
-const contact = document.querySelector("#contact");
+const landingh1 = document.querySelector("#landing-h1");
+const abouth1 = document.querySelector("#about-h1");
+const skillsh1 = document.querySelector("#skills-h1");
+const contacth1 = document.querySelector("#contact-h1");
 
 h1.forEach((h) => {
   h.style.opacity = 0;
 });
 
-function callBack(entries, observer) {
+function h1slide(entries, observer) {
   for (const entry of entries) {
     if (entry.isIntersecting) {
       entry.target.style.opacity = 1;
@@ -72,9 +72,68 @@ function callBack(entries, observer) {
   }
 }
 
-const observer = new IntersectionObserver(callBack, { threshold: 0 });
+const observer1 = new IntersectionObserver(h1slide, { threshold: 0 });
 
-observer.observe(landing);
-observer.observe(about);
-observer.observe(skills);
-observer.observe(contact);
+observer1.observe(landingh1);
+observer1.observe(abouth1);
+observer1.observe(skillsh1);
+observer1.observe(contacth1);
+
+//section animations
+const landing = document.querySelector("#landing");
+const main = document.querySelector("main");
+const body = document.querySelector("body");
+const header = document.querySelector("header");
+const textBackground = document.querySelectorAll(".home-sections > .content");
+const navText = document.querySelectorAll(".nav-buttons li");
+const mediaQuery = window.matchMedia("(max-width: 923px");
+
+function changeBackground(entries, observer) {
+  for (const entry of entries) {
+    if (entry.isIntersecting) {
+      main.style.background = "#0a0a0a";
+      body.style.color = "white";
+      header.style.background = "rgb(10 10 10 / 70%)";
+      navText.forEach((nav) => (nav.style.color = "color: rgb(230 40 40)"));
+
+      //mobile
+      mediaQuery.addListener(mobileBackgroundBlack);
+      mobileBackgroundBlack(mediaQuery);
+    } else {
+      main.style.background = "white";
+      body.style.color = "rgb(56, 46, 46)";
+      header.style.background = "#ffedf1";
+      navText.forEach((nav) => (nav.style.color = "color:#860000;"));
+
+      //mobile
+      mediaQuery.addListener(mobileBackgroundWhite);
+      mobileBackgroundWhite(mediaQuery);
+    }
+  }
+}
+const observer2 = new IntersectionObserver(changeBackground, {
+  threshold: 0.7,
+});
+
+observer2.observe(landing);
+
+function mobileBackgroundBlack(e) {
+  if (e.matches) {
+    textBackground.forEach((b) => (b.style.background = "unset"));
+  }
+}
+
+function mobileBackgroundWhite(e) {
+  if (e.matches) {
+    textBackground.forEach((b, index) => {
+      index === 0
+        ? (b.style.background = "unset")
+        : (b.style.background = "#ffffffd6");
+    });
+  } else {
+    textBackground.forEach((b) => (b.style.background = "unset"));
+  }
+}
+
+// mediaQuery.addListener(mobileBackgroundBlack);
+// mediaQuery.addListener(mobileBackgroundWhite);

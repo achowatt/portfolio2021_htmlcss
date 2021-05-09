@@ -42,7 +42,6 @@
     justify-content: center;
     align-items: center;
     background: white;
-    box-shadow: 4px -2px 20px #d0d0d040;
   }
 
   nav {
@@ -83,7 +82,6 @@
     min-height: 770px;
     display: flex;
     justify-content: center;
-    /* justify-content: flex-end; */
     align-items: center;
     margin-left: unset;
   }
@@ -91,11 +89,13 @@
   .home-sections > .content {
     padding: 2rem;
     width: 100%;
-    background: #ffffffd6;
     border-radius: 20px;
-    /* box-shadow: 2px 2px 10px #8080804d; */
     z-index: 10;
     margin: 1rem;
+  }
+
+  .home-sections:not(:first-of-type) .content {
+    background: #ffffffd6;
   }
 
   .project-section {
