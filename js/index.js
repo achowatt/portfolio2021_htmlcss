@@ -79,14 +79,14 @@ observer1.observe(abouth1);
 observer1.observe(skillsh1);
 observer1.observe(contacth1);
 
-//section animations
+//Change black bg to white -- scrolling between landing and about
 const landing = document.querySelector("#landing");
 const main = document.querySelector("main");
 const body = document.querySelector("body");
 const header = document.querySelector("header");
 const textBackground = document.querySelectorAll(".home-sections > .content");
 const navText = document.querySelectorAll(".nav-buttons li");
-const mediaQuery = window.matchMedia("(max-width: 923px");
+const mediaQuery = window.matchMedia("screen and (max-width: 923px)");
 
 function changeBackground(entries, observer) {
   for (const entry of entries) {
@@ -94,10 +94,9 @@ function changeBackground(entries, observer) {
       main.style.background = "#0a0a0a";
       body.style.color = "white";
       header.style.background = "rgb(10 10 10 / 70%)";
-      navText.forEach((nav) => (nav.style.color = "color: #ff5c72"));
+      navText.forEach((nav) => (nav.style.color = "color: #ff0d2e"));
 
       //mobile
-      mediaQuery.addListener(mobileBackgroundBlack);
       mobileBackgroundBlack(mediaQuery);
     } else {
       main.style.background = "white";
@@ -106,7 +105,6 @@ function changeBackground(entries, observer) {
       navText.forEach((nav) => (nav.style.color = "color:#860000;"));
 
       //mobile
-      mediaQuery.addListener(mobileBackgroundWhite);
       mobileBackgroundWhite(mediaQuery);
     }
   }
@@ -116,6 +114,10 @@ const observer2 = new IntersectionObserver(changeBackground, {
 });
 
 observer2.observe(landing);
+
+//Add background for mobile (for visibility when scrolling down between landing and about)
+mediaQuery.addEventListener("change", mobileBackgroundBlack(mediaQuery));
+mediaQuery.addEventListener("change", mobileBackgroundWhite(mediaQuery));
 
 function mobileBackgroundBlack(e) {
   if (e.matches) {
@@ -134,6 +136,3 @@ function mobileBackgroundWhite(e) {
     textBackground.forEach((b) => (b.style.background = "unset"));
   }
 }
-
-// mediaQuery.addListener(mobileBackgroundBlack);
-// mediaQuery.addListener(mobileBackgroundWhite);
