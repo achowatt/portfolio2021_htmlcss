@@ -94,7 +94,7 @@ function changeBackground(entries, observer) {
       main.style.background = "#0a0a0a";
       body.style.color = "white";
       header.style.background = "rgb(10 10 10 / 70%)";
-      navText.forEach((nav) => (nav.style.color = "color: rgb(230 40 40)"));
+      navText.forEach((nav) => (nav.style.color = "color: #ff5c72"));
 
       //mobile
       mediaQuery.addListener(mobileBackgroundBlack);
