@@ -121,7 +121,7 @@ mediaQuery.addEventListener("change", mobileBackgroundWhite(mediaQuery));
 
 function mobileBackgroundBlack(e) {
   if (e.matches) {
-    textBackground.forEach((b) => (b.style.background = "unset"));
+    textBackground.forEach((b) => (b.style.background = "#ffffff00"));
   }
 }
 
@@ -129,7 +129,7 @@ function mobileBackgroundWhite(e) {
   if (e.matches) {
     textBackground.forEach((b, index) => {
       index === 0
-        ? (b.style.background = "unset")
+        ? (b.style.background = "#ffffff00")
         : (b.style.background = "#ffffffd6");
     });
   } else {
