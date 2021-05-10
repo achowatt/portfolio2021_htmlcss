@@ -49,35 +49,35 @@ ScrollTrigger.create({
   scrub: 1,
 });
 
-//h1 animations
-const h1 = document.querySelectorAll("h1");
-const landingh1 = document.querySelector("#landing-h1");
-const abouth1 = document.querySelector("#about-h1");
-const skillsh1 = document.querySelector("#skills-h1");
-const contacth1 = document.querySelector("#contact-h1");
+// h1 animations
+// const h1 = document.querySelectorAll("h1");
+// const landingh1 = document.querySelector("#landing-h1");
+// const abouth1 = document.querySelector("#about-h1");
+// const skillsh1 = document.querySelector("#skills-h1");
+// const contacth1 = document.querySelector("#contact-h1");
 
-h1.forEach((h) => {
-  h.style.opacity = 0;
-});
+// h1.forEach((h) => {
+//   h.style.opacity = 0;
+// });
 
-function h1slide(entries, observer) {
-  for (const entry of entries) {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = 1;
-      entry.target.style.transform = "scale(1)";
-    } else {
-      entry.target.style.opacity = 0;
-      entry.target.style.transform = "scale(0.5)";
-    }
-  }
-}
+// function h1slide(entries, observer) {
+//   for (const entry of entries) {
+//     if (entry.isIntersecting) {
+//       entry.target.style.opacity = 1;
+//       entry.target.style.transform = "scale(1)";
+//     } else {
+//       entry.target.style.opacity = 0;
+//       entry.target.style.transform = "scale(0.5)";
+//     }
+//   }
+// }
 
-const observer1 = new IntersectionObserver(h1slide, { threshold: 0 });
+// const observer1 = new IntersectionObserver(h1slide, { threshold: 0 });
 
-observer1.observe(landingh1);
-observer1.observe(abouth1);
-observer1.observe(skillsh1);
-observer1.observe(contacth1);
+// observer1.observe(landingh1);
+// observer1.observe(abouth1);
+// observer1.observe(skillsh1);
+// observer1.observe(contacth1);
 
 //Change black bg to white -- scrolling between landing and about
 const landing = document.querySelector("#landing");
