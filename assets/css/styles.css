@@ -320,9 +320,9 @@ footer {
   align-items: center;
 }
 footer .content {
-  width: 60%;
-  margin-left: 40%;
+  width: 100%;
   text-align: center;
+  padding: 120px 0 20px;
 }
 footer p {
   padding: 0;
@@ -385,7 +385,7 @@ footer p {
 
 .nav-buttons li {
   font-size: 1.2rem;
-  color: #ff0d2e;
+  color: #fa5c5c;
 }
 
 button.arrow-down {
