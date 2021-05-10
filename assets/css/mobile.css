@@ -124,7 +124,6 @@
   }
 
   footer {
-    background: #ffedf1;
     display: flex;
     justify-self: center;
     align-items: center;
@@ -134,6 +133,7 @@
     width: 100%;
     margin-left: 0%;
     text-align: center;
+    padding: unset;
   }
 
   .nav-buttons {
